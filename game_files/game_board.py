@@ -126,6 +126,7 @@ class LetterGrid:
         return False
     
     def score_word(self, word: str) -> int:
+        # ensure word is only letters 
         score_dict = {3:1, 4:1, 5:2, 6:3, 7:5, 8:11, 9:20}
         if len(word) < 3:
             return 0
